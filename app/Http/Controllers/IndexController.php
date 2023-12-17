@@ -35,15 +35,13 @@ class IndexController extends Controller
         $item = array('title' =>'Contact','alias'=>'contact');
         array_push($menu, $item);
 
-          //  dd($peges);
-        return view('site.index', array(
-
+        return view('site.index',
+            array(
             'menu'=>$menu,
             'pages'=>$pages,
             'service'=>$services,
             'portfolios'=>$portfolios,
             'peoples'=>$peoples,
-
         ));
     }
 

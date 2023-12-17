@@ -11,7 +11,7 @@
                     <div id="main-nav" class="collapse navbar-collapse navStyle">
                         <ul class="nav navbar-nav" id="mainNav">
                             @foreach($menu as $item)
-
+                                <li class="active"><a href="#{{$item['alias']}}" class="scroll-link">{{$item['title']}}</a></li>
                             @endforeach
                                 <li class="active"><a href="#{{}}" class="scroll-link">{{Home}}</a></li>
                                 <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
